@@ -1,5 +1,6 @@
 :root {
 --accent-color: #2196F3;
+--secondary-color: #188CE8;
 }
 .link {
     text-decoration: none;
@@ -15,11 +16,6 @@ button { cursor: pointer;
 body {font-family: 'Roboto', sans-serif;
 }
 .hero {
-width: 1600px;
-height: 600px;
-left: 0px;
-top: 80px;
-
 background: #2F303A;
 }
 .logo {
@@ -126,7 +122,7 @@ h1 {
 }
 .modal-open-btn:hover,   
 .modal-open-btn:focus { 
-    background-color:#188CE8;
+    background-color: var(--secondary-color);
 }
 .portfolio-btn {
 font-family: 'Roboto';
@@ -139,14 +135,10 @@ color: #000000;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-    background-color:#188CE8;
+    background-color: var(--secondary-color);
     color: #FFFFFF;
-}
+    }
 .footer {
-width: 1600px;
-height: 252px;
-left: 0px;
-top: 2094px;
 background: #2F303A;
 }
 .footer-contact {
@@ -156,12 +148,20 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
+.footer-contact:hover,
+.footer-contact:focus {
+    color: var(--accent-color);
+}
 .footer-address {
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: #FFFFFF;
+}
+.footer-address:hover,
+.footer-address:focus {
+    color: var(--accent-color)
 }
 .porfolio-project {
     font-weight: 700;
@@ -178,4 +178,14 @@ color: #FFFFFF;
     letter-spacing: 0.03em;
     color: #757575; 
 }
-
+.footer-logo {
+    font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+}
+.address {
+    font-style: normal;
+}
